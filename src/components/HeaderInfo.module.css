@@ -1,0 +1,90 @@
+.container {
+  flex: 1;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.headerSection {
+  padding: 1%;
+  padding-bottom: 1.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstHeaderSectionHeaderText {
+  font-size: large;
+  font-weight: 500;
+}
+
+.firstHeaderSectionSubText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstHeaderSectionSubTextFont {
+  padding-right: 6px;
+  font-size: 11px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.dot {
+  padding-bottom: 4px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.postPaid {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(0, 119, 255);
+  background-color: rgba(135, 206, 250, 0.267);
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.btnPrimary {
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0691d1;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.innerDiv {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.horizontalLine {
+  width: 94%;
+  margin: 0;
+  margin-left: 14px;
+}
+
+.headerMiddleSection {
+  padding: 1%;
+  padding-bottom: 1.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMiddleSectionLeft {
+  display: flex;
+}
+
+.headerMiddleSectionRight {
+  display: flex;
+}
