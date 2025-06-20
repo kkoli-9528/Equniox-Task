@@ -1,0 +1,38 @@
+.container {
+  height: fit-content;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.dot {
+  margin: 1%;
+  margin-bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.verticalLine {
+  width: 2px;
+  height: 100px;
+  background-color: #000;
+}
+
+.dotLineWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerDiv {
+  padding: 2% 2% 0 2%;
+  display: flex;
+  gap: 10px;
+}
+
+.innerDiv2 {
+  padding: 0 2% 2% 2%;
+  display: flex;
+  gap: 10px;
+}

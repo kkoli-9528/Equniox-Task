@@ -33,9 +33,9 @@ const HeaderInfo = () => {
           </div>
         </div>
         <div className={styles.innerDiv}>
-          <RxHamburgerMenu style={{ color: "#0691d1", fontSize: "24px" }} />
+          <RxHamburgerMenu style={{ color: "#0691d1", fontSize: "30px" }} />
           <button type="button" className={styles.btnPrimary}>
-            <FaPlus style={{ marginRight: "5px", fontSize: "14px" }} />
+            <FaPlus style={{ marginRight: "5px", fontSize: "18px" }} />
             Raise Query
           </button>
         </div>
@@ -43,56 +43,80 @@ const HeaderInfo = () => {
       <hr className={styles.horizontalLine} />
       <div className={styles.headerMiddleSection}>
         <div className={styles.headerMiddleSectionLeft}>
-          <div>
-            <p>10,00,000</p>
-            <p>Total Revenue</p>
+          <div className={styles.middleSectionDivLeft}>
+            <p style={{ fontWeight: "600" }}>10,00,000</p>
+            <p style={{ color: "lightgray", fontWeight: "500" }}>
+              Total Revenue
+            </p>
           </div>
-          <div>
-            <p>7,00,000</p>
-            <p>Payment Received</p>
+          <div className={styles.middleSectionDivLeft}>
+            <p style={{ fontWeight: "600" }}>7,00,000</p>
+            <p style={{ color: "lightseagreen", fontWeight: "500" }}>
+              Payment Received
+            </p>
           </div>
-          <div>
-            <p>1,00,000</p>
-            <p>Not Yet Due</p>
+          <div className={styles.middleSectionDivLeft}>
+            <p style={{ fontWeight: "600" }}>1,00,000</p>
+            <p style={{ color: "rgb(0, 119, 255)", fontWeight: "500" }}>
+              Not Yet Due
+            </p>
           </div>
         </div>
+        <p className={styles.dot2}>|</p>
         <div className={styles.headerMiddleSectionRight}>
-          <div>
-            <p>
+          <div className={styles.middleSectionDivRight}>
+            <p style={{ color: "red", fontWeight: "500" }}>
               Payment
               <br />
               Overdue
             </p>
           </div>
-          <div>
-            <p>20,000</p>
-            <p>A</p>
+          <div className={styles.middleSectionDivRight}>
+            <p style={{ fontWeight: "600" }}>20,000</p>
+            <p style={{ color: "orange", fontWeight: "bold" }}>A</p>
           </div>
-          <div>
-            <p>50,000</p>
-            <p>B</p>
+          <div className={styles.middleSectionDivRight}>
+            <p style={{ fontWeight: "600" }}>50,000</p>
+            <p style={{ color: "lightcoral", fontWeight: "bold" }}>B</p>
           </div>
-          <div>
-            <p>50,000</p>
-            <p>C</p>
+          <div className={styles.middleSectionDivRight}>
+            <p style={{ fontWeight: "600" }}>50,000</p>
+            <p style={{ color: "#c5242c", fontWeight: "bold" }}>C</p>
           </div>
-          <div>
-            <p>30,000</p>
-            <p>D</p>
+          <div className={styles.middleSectionDivRight}>
+            <p style={{ fontWeight: "600" }}>30,000</p>
+            <p style={{ color: "red", fontWeight: "bold" }}>D</p>
           </div>
         </div>
       </div>
-      <div>
-        <p>Latest Category - Source</p>
-        <p>Others - References</p>
-        <p>Latest Category - Lead Source</p>
-        <p>-</p>
-        <p>Last Updated</p>
-        <p>07 Nov 2023</p>
-        <p>Total Outstanding</p>
-        <p>10,00,000</p>
-        <p>Last Order Date</p>
-        <p>10 Dec 2023 03:30 PM</p>
+      <hr className={styles.horizontalLine} />
+      <div className={styles.lastSectionDiv}>
+        <div>
+          <p style={{ color: "gray", fontWeight: "500" }}>
+            Latest Category - Source
+          </p>
+          <p style={{ fontWeight: "600" }}>Others - References</p>
+        </div>
+        <div>
+          <p style={{ color: "gray", fontWeight: "500" }}>
+            Latest Category - Lead Source
+          </p>
+          <p>-</p>
+        </div>
+        <div>
+          <p style={{ color: "gray", fontWeight: "500" }}>Last Updated</p>
+          <p style={{ fontWeight: "600" }}>07 Nov 2023</p>
+        </div>
+        <div>
+          <p style={{ color: "gray", fontWeight: "500" }}>Total Outstanding</p>
+          <p style={{ color: "red", fontWeight: "600" }}>10,00,000</p>
+        </div>
+        <div>
+          <p style={{ color: "gray", fontWeight: "500" }}>Last Order Date</p>
+          <p style={{ color: "red", fontWeight: "600" }}>
+            10 Dec 2023 03:30 PM
+          </p>
+        </div>
       </div>
     </div>
   );
