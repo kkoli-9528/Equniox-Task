@@ -2,6 +2,7 @@
   height: fit-content;
   border: 1px solid gray;
   border-radius: 8px;
+  font-weight: 500;
 }
 
 .dot {
