@@ -64,18 +64,15 @@ const RightSection = () => {
                 key={idx}
                 className={idx % 2 === 0 ? styles.innerDiv : styles.innerDiv2}
               >
-                {/* Left time and label */}
                 <div style={{ minWidth: "100px", textAlign: "end" }}>
                   {entry.label} <br /> {entry.time}
                 </div>
 
-                {/* Dot and Line */}
                 <div className={styles.dotLineWrapper}>
                   <span className={styles.dot}></span>
                   <span className={styles.verticalLine}></span>
                 </div>
 
-                {/* Right content */}
                 <div>
                   <div>{entry.status}</div>
                   <div>{entry.note}</div>
