@@ -46,11 +46,11 @@ const HeaderInfo = () => {
                 {item}
               </p>
             ))}
-            <p className={styles.dot}>|</p>
+            <p className={styles.dot1}>|</p>
             <p className={styles.firstHeaderSectionSubTextFont}>
               Created on: {company.createdAt}
             </p>
-            <p className={styles.dot}>|</p>
+            <p className={styles.dot1}>|</p>
             <p className={styles.postPaid}>{company.type}</p>
           </div>
         </div>
