@@ -75,7 +75,13 @@
   width: 94%;
   margin: 0;
   margin-left: 14px;
-  border-color: var(--border-light);
+}
+
+.hiddenLine {
+  display: none;
+  width: 96%;
+  margin-right: 4.3%;
+  margin-left: 14px;
 }
 
 .headerMiddleSection {
@@ -121,43 +127,184 @@
 }
 
 .lastSectionDiv {
-  padding: 1% 1% 1% 1%;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.totalRevenue {
-  color: var(--text-muted);
-  font-weight: 500;
+.plusIcon {
+  margin-right: 5px;
+  font-size: 18px;
 }
 
-.paymentReceived {
-  color: var(--success-color);
-  font-weight: 500;
+.hamburger {
+  color: #0691d1;
+  font-size: 30px;
 }
 
-.notYetDue {
-  color: var(--accent-blue);
-  font-weight: 500;
-}
-
-.paymentOverdue {
-  color: var(--danger-color);
-  font-weight: 500;
-}
-
-.metaLabel {
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.outstanding {
-  color: var(--danger-color);
+.boldText {
   font-weight: 600;
 }
 
-.lastOrderDate {
-  color: var(--danger-color);
+.grayText {
+  color: lightgray;
+  font-weight: 500;
+}
+
+.greenText {
+  color: lightseagreen;
+  font-weight: 500;
+}
+
+.blueText {
+  color: rgb(0, 119, 255);
+  font-weight: 500;
+}
+
+.redTextBold {
+  color: red;
   font-weight: 600;
+}
+
+.redTextBold1 {
+  color: red;
+  font-weight: 600;
+}
+
+.labelText {
+  color: gray;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dot2 {
+    font-size: 34px;
+    padding-inline: 6%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .firstHeaderSectionHeaderText {
+    font-size: xx-large;
+  }
+  .firstHeaderSectionSubTextFont {
+    font-size: 15px;
+  }
+  .postPaid {
+    font-size: 14px;
+  }
+  .btnPrimary {
+    font-size: medium;
+  }
+  .middleSectionDivLeft {
+    font-size: medium;
+  }
+
+  .middleSectionDivRight {
+    font-size: medium;
+  }
+  .dot2 {
+    display: block;
+    font-size: 35px;
+    padding-inline: 1.6%;
+  }
+  .plusIcon {
+    margin-right: 4px;
+    font-size: 18px;
+  }
+  .hamburger {
+    font-size: 29px;
+  }
+  .boldText {
+    font-weight: 600;
+    font-size: 1em;
+  }
+  .grayText {
+    font-weight: 600;
+  }
+  .redTextBold1 {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .labelText {
+    font-weight: 600;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerSection {
+    padding: 2%;
+  }
+  .firstHeaderSectionHeaderText {
+    font-size: 1.79rem;
+  }
+  .firstHeaderSectionSubTextFont {
+    font-size: 16px;
+  }
+  .dot {
+    font-size: 18px;
+  }
+  .dot1 {
+    font-size: 18px;
+  }
+  .postPaid {
+    font-size: 14px;
+  }
+  .btnPrimary {
+    font-size: medium;
+  }
+  .middleSectionDivLeft {
+    text-align: center;
+    font-size: medium;
+    flex-direction: column-reverse;
+  }
+  .headerMiddleSectionLeft {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .dot2 {
+    display: none;
+  }
+  .hiddenLine {
+    display: block;
+    width: 96%;
+    margin-right: 4.3%;
+    margin-left: 14px;
+  }
+  .headerMiddleSectionRight {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .middleSectionDivRight {
+    font-size: medium;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .headerMiddleSection {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lastSectionDiv {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+  .lastInnerDiv {
+    font-size: medium;
+    min-width: fit-content;
+    text-align: center;
+  }
 }

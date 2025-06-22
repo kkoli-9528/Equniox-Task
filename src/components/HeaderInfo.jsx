@@ -61,10 +61,12 @@ const HeaderInfo = () => {
         </div>
 
         <div className={styles.innerDiv}>
-          <ThemeToggle />
-          <RxHamburgerMenu className={styles.hamburgerIcon} />
-          <Button onClick={() => setShowModal(true)}>
-            <FaPlus style={{ marginRight: "5px", fontSize: "18px" }} />
+          <RxHamburgerMenu className={styles.hamburger} />
+          <Button
+            className={styles.btnPrimary}
+            onClick={() => setShowModal(true)}
+          >
+            <FaPlus className={styles.plusIcon} />
             Raise Query
           </Button>
           <RaiseQueryModal
@@ -79,30 +81,25 @@ const HeaderInfo = () => {
       <div className={styles.headerMiddleSection}>
         <div className={styles.headerMiddleSectionLeft}>
           <div className={styles.middleSectionDivLeft}>
-            <p style={{ fontWeight: "600" }}>{revenue.total}</p>
-            <p className={styles.totalRevenue}>
-              Total Revenue
-            </p>
+            <p className={styles.boldText}>{revenue.total}</p>
+            <p className={styles.grayText}>Total Revenue</p>
           </div>
           <div className={styles.middleSectionDivLeft}>
-            <p style={{ fontWeight: "600" }}>{revenue.received}</p>
-            <p className={styles.paymentReceived}>
-              Payment Received
-            </p>
+            <p className={styles.boldText}>{revenue.received}</p>
+            <p className={styles.greenText}>Payment Received</p>
           </div>
           <div className={styles.middleSectionDivLeft}>
-            <p style={{ fontWeight: "600" }}>{revenue.notDue}</p>
-            <p className={styles.notYetDue}>
-              Not Yet Due
-            </p>
+            <p className={styles.boldText}>{revenue.notDue}</p>
+            <p className={styles.blueText}>Not Yet Due</p>
           </div>
         </div>
 
+        <hr className={styles.hiddenLine} />
         <p className={styles.dot2}>|</p>
 
         <div className={styles.headerMiddleSectionRight}>
           <div className={styles.middleSectionDivRight}>
-            <p className={styles.paymentOverdue}>
+            <p className={styles.redTextBold}>
               Payment
               <br />
               Overdue
@@ -111,10 +108,10 @@ const HeaderInfo = () => {
 
           {overdue.map((item, i) => (
             <div key={i} className={styles.middleSectionDivRight}>
-              <p style={{ fontWeight: "600" }}>{item.amount}</p>
+              <p className={styles.boldText}>{item.amount}</p>
               <p style={{ color: item.color, fontWeight: "bold" }}>
                 {item.label}
-              </p>
+              </p>{" "}
             </div>
           ))}
         </div>
@@ -123,31 +120,25 @@ const HeaderInfo = () => {
       <hr className={styles.horizontalLine} />
 
       <div className={styles.lastSectionDiv}>
-        <div>
-          <p className={styles.metaLabel}>
-            Latest Category - Source
-          </p>
-          <p style={{ fontWeight: "600" }}>{meta.category}</p>
+        <div className={styles.lastInnerDiv}>
+          <p className={styles.labelText}>Latest Category - Source</p>
+          <p className={styles.boldText}>{meta.category}</p>
         </div>
-        <div>
-          <p className={styles.metaLabel}>
-            Latest Category - Lead Source
-          </p>
+        <div className={styles.lastInnerDiv}>
+          <p className={styles.labelText}>Latest Category - Lead Source</p>
           <p>{meta.leadSource}</p>
         </div>
-        <div>
-          <p className={styles.metaLabel}>Last Updated</p>
-          <p style={{ fontWeight: "600" }}>{meta.lastUpdated}</p>
+        <div className={styles.lastInnerDiv}>
+          <p className={styles.labelText}>Last Updated</p>
+          <p className={styles.boldText}>{meta.lastUpdated}</p>
         </div>
-        <div>
-          <p className={styles.metaLabel}>Total Outstanding</p>
-          <p className={styles.outstanding}>{meta.outstanding}</p>
+        <div className={styles.lastInnerDiv}>
+          <p className={styles.labelText}>Total Outstanding</p>
+          <p className={styles.redTextBold1}>{meta.outstanding}</p>
         </div>
-        <div>
-          <p className={styles.metaLabel}>Last Order Date</p>
-          <p className={styles.lastOrderDate}>
-            {meta.lastOrderDate}
-          </p>
+        <div className={styles.lastInnerDiv}>
+          <p className={styles.labelText}>Last Order Date</p>
+          <p className={styles.redTextBold1}>{meta.lastOrderDate}</p>
         </div>
       </div>
     </div>

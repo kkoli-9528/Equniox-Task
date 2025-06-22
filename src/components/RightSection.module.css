@@ -1,3 +1,8 @@
+.mainContainer {
+  margin-top: 2%;
+  width: 50%;
+}
+
 .container {
   height: fit-content;
   border: 2px solid var(--border-color);
@@ -41,4 +46,68 @@
   padding: 0 2% 2% 2%;
   display: flex;
   gap: 10px;
+}
+
+.headerText {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.entryLabel {
+  min-width: 100px;
+  text-align: end;
+}
+
+.entryAuthor {
+  text-align: right;
+}
+
+@media only screen and (max-width: 1440px) {
+  .mainContainer {
+    margin-top: 2%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+
+  .verticalLine {
+    width: 2px;
+    height: 90%;
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    font-size: medium;
+  }
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+  .verticalLine {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+  .headerText {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 100%;
+  }
+  .headerText {
+    margin-top: 1.5%;
+    font-size: large;
+  }
 }

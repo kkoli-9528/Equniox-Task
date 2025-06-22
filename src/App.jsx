@@ -6,20 +6,13 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className={styles.mainContainer}>
-        <HeaderInfo />
-        <div
-          style={{
-            display: "flex",
-            gap: "50px",
-          }}
-        >
-          <Tabs />
-          <RightSection />
-        </div>
+    <div className={styles.mainContainer}>
+      <HeaderInfo />
+      <div className={styles.innnerContainer}>
+        <Tabs />
+        <RightSection />
       </div>
-    </ThemeProvider>
+    </div>
   );
 }
 

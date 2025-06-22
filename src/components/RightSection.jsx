@@ -51,12 +51,10 @@ const timelineData = [
 
 const RightSection = () => {
   return (
-    <div style={{ marginTop: "2%" }}>
+    <div className={styles.mainContainer}>
       {timelineData.map((section, dateIdx) => (
         <div key={dateIdx}>
-          <center style={{ fontWeight: "600", fontSize: "x-large" }}>
-            {section.date}
-          </center>
+          <center className={styles.headerText}>{section.date}</center>
 
           <div className={styles.container}>
             {section.entries.map((entry, idx) => (
@@ -64,7 +62,7 @@ const RightSection = () => {
                 key={idx}
                 className={idx % 2 === 0 ? styles.innerDiv : styles.innerDiv2}
               >
-                <div style={{ minWidth: "100px", textAlign: "end" }}>
+                <div className={styles.entryLabel}>
                   {entry.label} <br /> {entry.time}
                 </div>
 
@@ -77,7 +75,7 @@ const RightSection = () => {
                   <div>{entry.status}</div>
                   <div>{entry.note}</div>
                   <div>Follow Up: {entry.followUp}</div>
-                  <div style={{ textAlign: "right" }}>- {entry.author}</div>
+                  <div className={styles.entryAuthor}>- {entry.author}</div>
                 </div>
               </div>
             ))}

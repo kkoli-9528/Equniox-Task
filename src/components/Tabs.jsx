@@ -77,15 +77,7 @@ const Tabs = () => {
 
   return (
     <div className={styles.container}>
-      <ul
-        className="nav nav-underline"
-        style={{
-          marginTop: "2%",
-          marginBottom: "4%",
-          fontSize: "large",
-          fontWeight: "600",
-        }}
-      >
+      <ul className={`nav nav-underline ${styles.navTabs}`}>
         {Object.entries(dashboardTabs).map(([key, tab]) => (
           <li key={key} className="nav-item">
             <button

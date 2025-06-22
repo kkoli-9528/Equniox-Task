@@ -1,7 +1,21 @@
 .mainContainer {
   padding: 2%;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  min-height: 100vh;
-  transition: var(--transition-theme);
+}
+
+.innnerContainer {
+  display: flex;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .innnerContainer {
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .innnerContainer {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
 }

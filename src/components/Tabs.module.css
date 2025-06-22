@@ -5,12 +5,10 @@
 }
 
 .tableWrapper {
-  border: 1px solid var(--border-color);
+  border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
   height: 55%;
-  background-color: var(--bg-primary);
-  transition: var(--transition-theme);
 }
 
 .table {
@@ -18,40 +16,68 @@
   height: 100%;
   border-collapse: collapse;
   font-size: 14px;
-  background-color: var(--bg-primary);
 }
 
 .navLink {
-  color: var(--text-secondary);
+  color: #444;
   border-bottom: 2px solid transparent;
   padding: 8px 12px;
   transition: all 0.3s ease;
 }
 
 .navLinkActive {
-  color: var(--accent-blue);
-  border-bottom: 2px solid var(--accent-blue);
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
   font-weight: bold;
 }
 
 th {
   text-align: left;
   padding: 10px;
-  background-color: var(--table-header-bg);
-  color: var(--text-secondary);
-  transition: var(--transition-theme);
+  background-color: #f9f9f9;
+  color: gray;
 }
 
 td {
   padding: 12px;
   height: 40px;
-  color: var(--text-primary);
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--table-stripe-even);
+  background-color: #f2f2f2;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: var(--table-stripe-odd);
+  background-color: #ddd;
+}
+
+.navTabs {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-size: large;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .navTabs {
+    margin-top: 0;
+    margin-bottom: 1%;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+  }
 }
