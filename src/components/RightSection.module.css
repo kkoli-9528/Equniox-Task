@@ -106,3 +106,51 @@
     font-size: large;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    font-size: small;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+  .verticalLine {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+  .mainContainer {
+    margin-top: 1.6%;
+    margin-bottom: 1.5%;
+    width: 100%;
+  }
+  .headerText {
+    margin-top: 1.5%;
+    font-size: 1.03em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    font-size: small;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+  .verticalLine {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+  .mainContainer {
+    margin-top: 1.6%;
+    margin-bottom: 1.5%;
+    width: 100%;
+  }
+  .headerText {
+    margin-top: 1.5%;
+    font-size: 0.9em;
+  }
+}
