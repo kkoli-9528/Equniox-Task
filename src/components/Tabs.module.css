@@ -18,6 +18,19 @@
   font-size: 14px;
 }
 
+.navLink {
+  color: #444;
+  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.navLinkActive {
+  color: #007bff; /* or your theme blue */
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
 th {
   text-align: left;
   padding: 10px;

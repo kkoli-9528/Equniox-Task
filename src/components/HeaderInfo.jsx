@@ -1,6 +1,9 @@
 import styles from "./HeaderInfo.module.css";
 import { FaPlus } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Button from "react-bootstrap/Button";
+import { useState } from "react";
+import RaiseQueryModal from "./RaiseQueryModal";
 
 const headerInfo = {
   company: {
@@ -31,6 +34,7 @@ const headerInfo = {
 
 const HeaderInfo = () => {
   const { company, revenue, overdue, meta } = headerInfo;
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -57,10 +61,14 @@ const HeaderInfo = () => {
 
         <div className={styles.innerDiv}>
           <RxHamburgerMenu style={{ color: "#0691d1", fontSize: "30px" }} />
-          <button type="button" className={styles.btnPrimary}>
+          <Button onClick={() => setShowModal(true)}>
             <FaPlus style={{ marginRight: "5px", fontSize: "18px" }} />
             Raise Query
-          </button>
+          </Button>
+          <RaiseQueryModal
+            show={showModal}
+            handleClose={() => setShowModal(false)}
+          />
         </div>
       </div>
 
