@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import RaiseQueryModal from "./RaiseQueryModal";
+import ThemeToggle from "./ThemeToggle";
 
 const headerInfo = {
   company: {
@@ -60,7 +61,8 @@ const HeaderInfo = () => {
         </div>
 
         <div className={styles.innerDiv}>
-          <RxHamburgerMenu style={{ color: "#0691d1", fontSize: "30px" }} />
+          <ThemeToggle />
+          <RxHamburgerMenu className={styles.hamburgerIcon} />
           <Button onClick={() => setShowModal(true)}>
             <FaPlus style={{ marginRight: "5px", fontSize: "18px" }} />
             Raise Query
@@ -78,19 +80,19 @@ const HeaderInfo = () => {
         <div className={styles.headerMiddleSectionLeft}>
           <div className={styles.middleSectionDivLeft}>
             <p style={{ fontWeight: "600" }}>{revenue.total}</p>
-            <p style={{ color: "lightgray", fontWeight: "500" }}>
+            <p className={styles.totalRevenue}>
               Total Revenue
             </p>
           </div>
           <div className={styles.middleSectionDivLeft}>
             <p style={{ fontWeight: "600" }}>{revenue.received}</p>
-            <p style={{ color: "lightseagreen", fontWeight: "500" }}>
+            <p className={styles.paymentReceived}>
               Payment Received
             </p>
           </div>
           <div className={styles.middleSectionDivLeft}>
             <p style={{ fontWeight: "600" }}>{revenue.notDue}</p>
-            <p style={{ color: "rgb(0, 119, 255)", fontWeight: "500" }}>
+            <p className={styles.notYetDue}>
               Not Yet Due
             </p>
           </div>
@@ -100,7 +102,7 @@ const HeaderInfo = () => {
 
         <div className={styles.headerMiddleSectionRight}>
           <div className={styles.middleSectionDivRight}>
-            <p style={{ color: "red", fontWeight: "500" }}>
+            <p className={styles.paymentOverdue}>
               Payment
               <br />
               Overdue
@@ -122,28 +124,28 @@ const HeaderInfo = () => {
 
       <div className={styles.lastSectionDiv}>
         <div>
-          <p style={{ color: "gray", fontWeight: "500" }}>
+          <p className={styles.metaLabel}>
             Latest Category - Source
           </p>
           <p style={{ fontWeight: "600" }}>{meta.category}</p>
         </div>
         <div>
-          <p style={{ color: "gray", fontWeight: "500" }}>
+          <p className={styles.metaLabel}>
             Latest Category - Lead Source
           </p>
           <p>{meta.leadSource}</p>
         </div>
         <div>
-          <p style={{ color: "gray", fontWeight: "500" }}>Last Updated</p>
+          <p className={styles.metaLabel}>Last Updated</p>
           <p style={{ fontWeight: "600" }}>{meta.lastUpdated}</p>
         </div>
         <div>
-          <p style={{ color: "gray", fontWeight: "500" }}>Total Outstanding</p>
-          <p style={{ color: "red", fontWeight: "600" }}>{meta.outstanding}</p>
+          <p className={styles.metaLabel}>Total Outstanding</p>
+          <p className={styles.outstanding}>{meta.outstanding}</p>
         </div>
         <div>
-          <p style={{ color: "gray", fontWeight: "500" }}>Last Order Date</p>
-          <p style={{ color: "red", fontWeight: "600" }}>
+          <p className={styles.metaLabel}>Last Order Date</p>
+          <p className={styles.lastOrderDate}>
             {meta.lastOrderDate}
           </p>
         </div>

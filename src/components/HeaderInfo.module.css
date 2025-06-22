@@ -1,7 +1,9 @@
 .container {
   flex: 1;
-  border: 2px solid lightgray;
+  border: 2px solid var(--border-color);
   border-radius: 5px;
+  background-color: var(--bg-primary);
+  transition: var(--transition-theme);
 }
 
 .headerSection {
@@ -15,6 +17,7 @@
 .firstHeaderSectionHeaderText {
   font-size: xx-large;
   font-weight: 500;
+  color: var(--text-primary);
 }
 
 .firstHeaderSectionSubText {
@@ -26,7 +29,7 @@
 .firstHeaderSectionSubTextFont {
   padding-right: 6px;
   font-size: 16px;
-  color: gray;
+  color: var(--text-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,34 +40,29 @@
   padding-bottom: 4px;
   margin-right: 4px;
   font-size: 18px;
+  color: var(--text-secondary);
 }
 
 .dot1 {
   padding-bottom: 4px;
   margin-right: 6px;
   font-size: 18px;
+  color: var(--text-secondary);
 }
 
 .postPaid {
   font-size: 14px;
   font-weight: 700;
-  color: rgb(0, 119, 255);
-  background-color: rgba(135, 206, 250, 0.267);
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-bg);
   border-radius: 20px;
   padding: 8px;
   margin-bottom: 0;
 }
 
-.btnPrimary {
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  font-weight: 500;
-  color: #fff;
-  background-color: #0691d1;
-  border: none;
-  padding: 8px;
-  border-radius: 10px;
+.hamburgerIcon {
+  color: var(--accent-blue);
+  font-size: 30px;
 }
 
 .innerDiv {
@@ -77,6 +75,7 @@
   width: 94%;
   margin: 0;
   margin-left: 14px;
+  border-color: var(--border-light);
 }
 
 .headerMiddleSection {
@@ -118,6 +117,7 @@
   padding-bottom: 4px;
   font-size: 38px;
   padding-inline: 13%;
+  color: var(--text-secondary);
 }
 
 .lastSectionDiv {
@@ -125,4 +125,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.totalRevenue {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.paymentReceived {
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+.notYetDue {
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+
+.paymentOverdue {
+  color: var(--danger-color);
+  font-weight: 500;
+}
+
+.metaLabel {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.outstanding {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.lastOrderDate {
+  color: var(--danger-color);
+  font-weight: 600;
 }
