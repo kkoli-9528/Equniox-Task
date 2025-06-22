@@ -1,9 +1,7 @@
 .container {
   flex: 1;
-  border: 2px solid var(--border-color);
+  border: 2px solid lightgray;
   border-radius: 5px;
-  background-color: var(--bg-primary);
-  transition: var(--transition-theme);
 }
 
 .headerSection {
@@ -17,7 +15,6 @@
 .firstHeaderSectionHeaderText {
   font-size: xx-large;
   font-weight: 500;
-  color: var(--text-primary);
 }
 
 .firstHeaderSectionSubText {
@@ -29,7 +26,7 @@
 .firstHeaderSectionSubTextFont {
   padding-right: 6px;
   font-size: 16px;
-  color: var(--text-secondary);
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,29 +37,34 @@
   padding-bottom: 4px;
   margin-right: 4px;
   font-size: 18px;
-  color: var(--text-secondary);
 }
 
 .dot1 {
   padding-bottom: 4px;
   margin-right: 6px;
   font-size: 18px;
-  color: var(--text-secondary);
 }
 
 .postPaid {
   font-size: 14px;
   font-weight: 700;
-  color: var(--accent-blue);
-  background-color: var(--accent-blue-bg);
+  color: rgb(0, 119, 255);
+  background-color: rgba(135, 206, 250, 0.267);
   border-radius: 20px;
   padding: 8px;
   margin-bottom: 0;
 }
 
-.hamburgerIcon {
-  color: var(--accent-blue);
-  font-size: 30px;
+.btnPrimary {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0691d1;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .innerDiv {
@@ -123,7 +125,6 @@
   padding-bottom: 4px;
   font-size: 38px;
   padding-inline: 13%;
-  color: var(--text-secondary);
 }
 
 .lastSectionDiv {

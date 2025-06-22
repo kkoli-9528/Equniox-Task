@@ -4,7 +4,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import RaiseQueryModal from "./RaiseQueryModal";
-import ThemeToggle from "./ThemeToggle";
 
 const headerInfo = {
   company: {

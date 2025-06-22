@@ -5,12 +5,9 @@
 
 .container {
   height: fit-content;
-  border: 2px solid var(--border-color);
+  border: 2px solid lightgray;
   border-radius: 8px;
   font-weight: 500;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  transition: var(--transition-theme);
 }
 
 .dot {
@@ -18,16 +15,14 @@
   margin-bottom: 0;
   width: 20px;
   height: 20px;
-  background-color: var(--text-primary);
+  background-color: black;
   border-radius: 50%;
-  transition: var(--transition-theme);
 }
 
 .verticalLine {
   width: 2px;
   height: 100px;
-  background-color: var(--text-primary);
-  transition: var(--transition-theme);
+  background-color: #000;
 }
 
 .dotLineWrapper {
